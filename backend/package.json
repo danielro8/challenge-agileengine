@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "env-cmd -f ./config/prod.env node ./bin/www",
+    "dev": "env-cmd -f ./config/dev.env nodemon ./bin/www",
+    "test": "env-cmd -f ./config/test.env jest --testEnvironment=node --verbose --forceExit --watchAll --maxWorkers=1"
+  },
+  "dependencies": {
+    "async-mutex": "^0.2.4",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "env-cmd": "^10.1.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "uuid": "^8.3.1"
+  }
+}
