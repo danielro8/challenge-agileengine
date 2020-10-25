@@ -6,7 +6,15 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <header className="header">
+      <h1>Challenge para Securitize</h1>
+    </header>
+    <div className="container main">
+      <App />
+    </div>
+    <footer>
+      <p>Coyright &copy;2020 Daniel Edmundo Rodríguez López Serra</p>
+    </footer>
   </React.StrictMode>,
   document.getElementById('root')
 );
